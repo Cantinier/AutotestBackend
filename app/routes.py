@@ -19,3 +19,8 @@ def registration():
     front_name = request.json["front_name"]
     result = sqllib.reg(username, password, front_name)
     return result
+
+@app.route('/leha', methods=['GET'])
+def registration():
+    return "Привет Лёха"
+
